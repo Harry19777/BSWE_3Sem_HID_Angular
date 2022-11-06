@@ -1,0 +1,49 @@
+<!--<mat-form-field appearance="standard">
+<mat-label>Filter Table</mat-label>
+<input matInput placeholder="" placeholder="Search" #input>
+</mat-form-field>
+
+<div style="overflow-x:auto;">
+<div class="mat-elevation-z8 sensor-date">
+<mat-table [dataSource]="dataSource" matSort>
+    <ng-container matColumnDef="Sensor">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Sensor</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{row.name}}</mat-cell>
+    </ng-container>
+    <ng-container matColumnDef="Datum">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Datum</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{row.date | date:'longDate'}}</mat-cell>
+    </ng-container>
+    <ng-container  matColumnDef="Temperatur">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Temperatur</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{row.temperatur}}</mat-cell>
+    </ng-container>
+    <ng-container  matColumnDef="Luftfeuchtigkeit">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Luftfeuchtigkeit</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{row.humidity}}</mat-cell>
+    </ng-container>
+    <ng-container  matColumnDef="Standort">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Standort</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{row.location}}</mat-cell>
+    </ng-container>
+    <ng-container  matColumnDef="Position">
+        <mat-header-cell *matHeaderCellDef mat-sort-header>Position</mat-header-cell>
+        <mat-cell *matCellDef="let row">{{row.sensoren.position}}</mat-cell>
+    </ng-container>
+ 
+    <mat-header-row *matHeaderRowDef="sensorenDaten"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: sensorenDaten"></mat-row>
+-->
+
+    <!--Shows when data does not exist-->
+  <!--  <tr *matNoDataRow>
+        <td class="mat-cell" colspan="4">The filter does not match any item in the data for this test "{{input.value}} "</td>
+    </tr>
+</mat-table>
+<mat-paginator #page 
+    [length]="sensorenDaten?.length"
+    [pageSize]="3"
+    [pageSizeOptions]="[3,5,10]"
+    aria-label="select page of sensors"></mat-paginator>
+</div>
+</div> -->
