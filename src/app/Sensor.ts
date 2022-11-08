@@ -2,7 +2,7 @@ export interface Sensor {
     id: number;
     name: string;
     location: string;
-    aktive: boolean;
+    aktice: boolean;
     position: SensorPosition,
   }
 

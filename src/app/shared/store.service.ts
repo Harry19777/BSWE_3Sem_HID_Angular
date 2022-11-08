@@ -7,7 +7,7 @@ import { Sensorendata } from '../Sensorendata';
 })
 export class StoreService {
 
-  public sensoren_Daten: Sensorendata[] = [];
+  private _sensorenDaten: Sensorendata[] = [];
   public sensoren: Sensor[] = [];
 
   public dataHasUpdated = new EventEmitter();
@@ -15,11 +15,11 @@ export class StoreService {
   constructor() { }
 
   public set sensorenDaten(v: Sensorendata[]) {
-    this.sensoren_Daten = v;
+    this._sensorenDaten = v;
     this.dataHasUpdated.emit();
   }
 
   public get sensorenDaten(): Sensorendata[] {
-    return this.sensoren_Daten;
+    return this._sensorenDaten;
   }
 }

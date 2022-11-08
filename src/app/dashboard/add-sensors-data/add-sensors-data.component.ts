@@ -33,5 +33,4 @@ export class AddSensorsDataComponent implements OnInit {
   toggleAddTask() {
     this.showAddTask = !this.showAddTask;
   }
-
 }
