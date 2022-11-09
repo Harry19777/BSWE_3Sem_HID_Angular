@@ -3,10 +3,7 @@ import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { map } from 'rxjs/operators';
 import { Observable, of as observableOf, merge } from 'rxjs';
-import { BackendService } from '../shared/backend.service';
-import { StoreService } from '../shared/store.service';
 import { Sensor } from '../Sensor';
-import { SensorsDataComponent } from '../dashboard/sensors-data/sensors-data.component';
 //https://stackoverflow.com/questions/68401715/angular-material-table-component-not-showing-data-on-first-load
 
 export interface DataTableItem {
@@ -78,6 +75,7 @@ export class DataTableDataSource extends DataSource<DataTableItem> {
     });
   }
 }
+
 
 function compare(a: string | number, b: string | number, isAsc: boolean): number {
   return (a < b ? -1 : 1) * (isAsc ? 1 : -1);
